@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-text: #25246F;
+  --color-text-white: #F4F4F4;
+  --color-bg: #41BFCC;
+  --color-footer:#A092CF;
+    --font-lexend: 'Jura', sans-serif;
+  --color-blue-light:#2A6098;
+   --animate-title: title 2s ease-in-out;
+   --color-lilas: #E2DAFF;
+   --color-roxo: #A092CF;
+   --color-azul: #25246F;
+   --color-azulclaro: #2A6098;
+}
+
+@layer utilities {
+  .remove-number-spinners::-webkit-outer-spin-button,
+  .remove-number-spinners::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .remove-number-spinners {
+    appearance: textfield;
+  }
+}
+
+@keyframes title {
+    0% {
+        opacity:0%
+    }
+
+    100%{
+      opacity: 100%;
+    }
+}
